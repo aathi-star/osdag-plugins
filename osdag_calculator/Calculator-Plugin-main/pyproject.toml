@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=6.10"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-calculator-plugin"
+version = "1.0.0"
+description = "calculator plugin"
+authors = [{name = "Aathithya Sharan"}]
+requires-python = ">=3.7"
+dependencies = [
+    "PyQt5>=5.14.2"
+]
+
+[project.entry-points."osdag.plugins"]
+simple_calculator = "calculator_plugin:plugin_class"
